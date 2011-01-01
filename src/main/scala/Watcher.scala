@@ -15,5 +15,5 @@ class Watcher extends BundleActivator {
     }
   }
 
-  override def stop(context: BundleContext) {}
+  override def stop(context: BundleContext) { println("bundle stop")}
 }
