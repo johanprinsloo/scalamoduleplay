@@ -1,4 +1,4 @@
-package org.scalamoduleplay
+package org.test.scalamoduleplay
 
 
 trait Handshake {

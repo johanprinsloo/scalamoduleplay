@@ -1,4 +1,4 @@
-package org.scalamoduleplay
+package org.test.scalamoduleplay
 
 import com.weiglewilczek.scalamodules._
 import org.osgi.framework.{BundleActivator, BundleContext}

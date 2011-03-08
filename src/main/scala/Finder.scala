@@ -1,4 +1,4 @@
-package org.scalamoduleplay
+package org.test.scalamoduleplay
 
 import com.weiglewilczek.scalamodules._
 import org.osgi.framework.{BundleActivator, BundleContext}
@@ -32,5 +32,7 @@ class Finder extends BundleActivator {
     }
   }
 
-  override def stop(context: BundleContext) {}
+  override def stop(context: BundleContext) {
+    println("Bundle stop: org.scalamoduleplay")
+  }
 }

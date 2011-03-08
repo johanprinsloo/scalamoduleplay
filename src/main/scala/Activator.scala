@@ -1,4 +1,4 @@
-package org.scalamoduleplay
+package org.test.scalamoduleplay
 
 import java.io.Serializable
 import com.weiglewilczek.scalamodules._
@@ -7,6 +7,7 @@ import org.osgi.framework.{BundleActivator, BundleContext}
 class Activator extends BundleActivator {
 
   override def start(context: BundleContext) {
+    println("Bundle start: org.scalamoduleplay")
     val handshake = new Handshake {
       override def init = "Init!"
       override def register = "Register!"
@@ -31,7 +32,9 @@ class Activator extends BundleActivator {
       properties = Map(Style -> "alt2", "priority" -> 1))
   }
 
-  override def stop(context: BundleContext) {}
+  override def stop(context: BundleContext) {
+    println("Bundle stop: org.scalamoduleplay")
+  }
 
   private val Style = "style"
 }
